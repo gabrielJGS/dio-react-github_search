@@ -2,13 +2,9 @@
 ## Criando um front-end totalmente componentizado na prática com ReactJS
 Projeto desenvolvido com React, utilizando as dependências:  
 - Axios
-- React-tabs
-<<<<<<< HEAD
+- React-tabs  
 Extra:  
 - Typescript
-=======
-Extra:
->>>>>>> ef61e60a5f353abd425c9afd500455c0fe1c663f
 - React-icons
 
 Esta aplicação realiza a busca na api pública do Github, pesquisando por nome de usuário e retornando as informações do usuário, como nome, local, repositórios...  
