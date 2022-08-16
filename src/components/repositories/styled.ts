@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 const WrapperTabs = styled(Tabs)`
   font-size: 16px;
-  width: 50%;
+  width: 100%;
+  margin-top: 16px;
 `;
 const WrapperTabList = styled(TabList)`
   list-style-type: none;
@@ -20,7 +21,7 @@ const WrapperTab = styled(Tab)`
   padding: 16px;
   user-select: none;
   cursor: pointer;
-  
+  margin-right: 5px;
   &:focus {
     outline: none;
   }
@@ -28,29 +29,25 @@ const WrapperTab = styled(Tab)`
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom: 1px solid white;
-    
   }
 `;
 const WrapperTabPanel = styled(TabPanel)`
   padding: 8px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.3);
   margin-top: -5px;
-  z-index: 1;
-  background-color: '#fff';
+
+  z-index: 99999;
+  background-color: "#fff";
   display: none;
   &.is-selected {
     display: block;
   }
 `;
-// const WrapperTabPanel = styled(TabPanel)`
-//   display: none;
-//   min-height: 40vh;
-//   padding: 8px;
-//   margin-top: 5px;
-//   &.is-selected {
-//     display: block;
-//   }
-// `;
 
-export { WrapperTabs, WrapperTabList, WrapperTab, WrapperTabPanel };
+const WrapperList = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+`;
+
+export { WrapperTabs, WrapperTabList, WrapperTab, WrapperTabPanel, WrapperList };
