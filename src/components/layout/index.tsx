@@ -1,10 +1,11 @@
 import React from "react";
-import * as s from './styled';
+import Header from "../header";
+import * as s from "./styled";
 
-function Layout({ children }: { children: JSX.Element[] }) {
+function Layout({ children }: { children: JSX.Element | JSX.Element[] }) {
   return (
     <s.WrapperLayout>
-      <header>header</header>
+      <Header />
       {children}
     </s.WrapperLayout>
   );
