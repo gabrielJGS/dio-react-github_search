@@ -36,7 +36,7 @@ const WrapperStatusCount = styled.div`
   }
 `;
 
-const WrapperUsername = styled.div`
+const WrapperUserGeneric = styled.div`
   display: flex;
   align-items: center;
   margin-top: 8px;
@@ -56,4 +56,4 @@ const WrapperImage = styled.img`
   margin: 8px;
 `;
 
-export { Wrapper, WrapperInfoUser, WrapperStatusCount, WrapperUsername, WrapperImage };
+export { Wrapper, WrapperInfoUser, WrapperStatusCount, WrapperUserGeneric, WrapperImage };
