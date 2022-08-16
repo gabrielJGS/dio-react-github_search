@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  background-color: white;
   padding: 8px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -8,6 +9,9 @@ const Wrapper = styled.div`
   width: 350px;
   height: 150px;
   align-content: center;
+  &:hover{
+    box-shadow: 2px 2px 5px #999;
+  }
 `;
 
 const WrapperTitle = styled.h2`
