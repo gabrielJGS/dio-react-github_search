@@ -18,8 +18,8 @@ const Wrapper = styled.div`
   button {
     background-color: #225ed8;
     color: white;
-    padding: 8px 16px;
-    margin: 0 16px;
+    padding: 0px 16px;
+    margin: 0 8px;
     border-radius: 8px;
     font-weight: bold;
     font-size: 16px;

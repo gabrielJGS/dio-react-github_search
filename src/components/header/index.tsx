@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useGithub from "../../hooks/github-hooks";
 import * as S from "./styled";
+import { MdOutlineSearch } from "react-icons/md";
 
 function Header() {
   const [userSearch, setUserSearch] = useState("");
@@ -11,7 +12,7 @@ function Header() {
     const user = getUser ? getUser(userSearch) : null;
     return user;
   };
-  
+
   const handleSubmit = (e: any) => {
     if (e.key == "Enter") {
       submitGetUser();
@@ -27,7 +28,10 @@ function Header() {
           onChange={(e) => setUserSearch(e.target.value)}
           onKeyDown={handleSubmit}
         />
-        <button onClick={submitGetUser}>Buscar</button>
+        <button onClick={submitGetUser}>
+          <MdOutlineSearch />
+          
+        </button>
       </S.Wrapper>
     </header>
   );
