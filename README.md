@@ -6,8 +6,11 @@ Projeto desenvolvido com React, utilizando as dependências:
 Extra:  
 - Typescript
 - React-icons
+- gh-pages
 
 Esta aplicação realiza a busca na api pública do Github, pesquisando por nome de usuário e retornando as informações do usuário, como nome, local, repositórios...  
+Demonstração em: https://gabrieljgs.github.io/dio-react-github_search/
+
 
 # Getting Started with Create React App
 
