@@ -27,11 +27,13 @@ const Repositories = () => {
           <s.WrapperTabPanel>
             <s.WrapperList>
               {githubState?.repositories.map((item) => {
+                console.log(item)
                 return (
                   <RepositoryItem
                     key={item.id}
                     name={item.name}
-                    linkToRepo={item.full_name}
+                    description={item.description}
+                    linkToRepo={item.html_url}
                     fullName={item.full_name}
                   />
                 );
@@ -45,6 +47,7 @@ const Repositories = () => {
                   <RepositoryItem
                     key={item.id}
                     name={item.name}
+                    description={item.description}
                     linkToRepo={item.full_name}
                     fullName={item.full_name}
                   />

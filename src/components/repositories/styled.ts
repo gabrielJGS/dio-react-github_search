@@ -22,21 +22,31 @@ const WrapperTab = styled(Tab)`
   user-select: none;
   cursor: pointer;
   margin-right: 5px;
-  &:focus {
-    outline: none;
+  height: 100%;
+
+  &:hover {
+    background-color: #333;
+    font-weight: bold;
+    color: whitesmoke;
   }
   &.is-selected {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom: 1px solid white;
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: black;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom: 1px solid transparent;
   }
 `;
 const WrapperTabPanel = styled(TabPanel)`
+  border-collapse: collapse;
+
   padding: 8px;
   margin-top: -5px;
-
+  border: 1px solid #ccc;
+  border-radius: 5px;
   z-index: 99999;
-  background-color: "#fff";
+  background-color: whitesmoke;
   display: none;
   &.is-selected {
     display: block;
@@ -48,6 +58,8 @@ const WrapperList = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  background-color: whitesmoke;
+  border-radius: 15px;
 `;
 
 export { WrapperTabs, WrapperTabList, WrapperTab, WrapperTabPanel, WrapperList };
