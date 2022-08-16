@@ -1,3 +1,13 @@
+# App desenvolvido para o Bootcamp Impulso Javascript Evolution
+## Criando um front-end totalmente componentizado na prática com ReactJS
+Projeto desenvolvido com React, utilizando as dependências:  
+- Axios
+- React-tabs
+Extra:
+- React-icons
+
+Esta aplicação realiza a busca na api pública do Github, pesquisando por nome de usuário e retornando as informações do usuário, como nome, local, repositórios...  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
