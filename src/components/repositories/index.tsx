@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import * as s from "./styled";
 import RepositoryItem from "../repository-item";
 import useGithub from "../../hooks/github-hooks";
+import { MdStar } from "react-icons/md";
+import { MdBookmarks } from "react-icons/md";
 
 const Repositories = () => {
   const { githubState, getUserRepos, getUserStarred } = useGithub();
@@ -14,20 +16,26 @@ const Repositories = () => {
     }
 
     setHasUserForSearchRepos(!!(githubState && githubState.user.login));
-  }, [githubState?.user.login, githubState, getUserRepos, getUserStarred]);
+  }, [githubState?.user.login]);
 
   return (
     <>
       {hasUserForSearchRepos ? (
         <s.WrapperTabs selectedTabClassName="is-selected" selectedTabPanelClassName="is-selected">
           <s.WrapperTabList>
-            <s.WrapperTab>Repositories</s.WrapperTab>
-            <s.WrapperTab>Starred</s.WrapperTab>
+            <s.WrapperTab>
+              <MdBookmarks />
+              Repositories
+            </s.WrapperTab>
+            <s.WrapperTab>
+              <MdStar />
+              Starred
+            </s.WrapperTab>
           </s.WrapperTabList>
           <s.WrapperTabPanel>
             <s.WrapperList>
               {githubState?.repositories.map((item) => {
-                console.log(item)
+                console.log(item);
                 return (
                   <RepositoryItem
                     key={item.id}

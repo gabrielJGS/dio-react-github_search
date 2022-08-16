@@ -36,6 +36,9 @@ const WrapperTab = styled(Tab)`
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
     border-bottom: 1px solid transparent;
+    svg {
+      color: #225ed8;
+    }
   }
 `;
 const WrapperTabPanel = styled(TabPanel)`
